@@ -1,10 +1,12 @@
 import Axios from "axios";
+// eslint-disable-next-line no-unused-vars
 import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { alert } from "../helper/notification";
 
 export const Auth = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   const [user, setuser] = useState(null);

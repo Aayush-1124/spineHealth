@@ -35,8 +35,8 @@ const Visit = () => {
   // ];
 
   const textareaInputHeader = [
-    { title: "reason For Visit", name: "reasonForVisit" },
-    { title: "prescribed Medications", name: "prescribedMedications" },
+    { title: "Reason For Visit", name: "reasonForVisit" },
+    { title: "Prescribed Medications", name: "prescribedMedications" },
     { title: "Note (If Any)", name: "notes" },
   ];
 

@@ -22,7 +22,7 @@ export const VisitDataProvider = ({ children }) => {
       response.data.error
         ? alert(response.data.message)
         : success(response.data.message);
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.error(error);
       throw error;
@@ -53,7 +53,7 @@ export const VisitDataProvider = ({ children }) => {
       response.data.error
         ? alert(response.data.message)
         : success(response.data.message);
-      navigate(`/`);
+      navigate(`/dashboard`);
     } catch (error) {
       console.error(error);
       throw error;
@@ -70,7 +70,7 @@ export const VisitDataProvider = ({ children }) => {
       response.data.error
         ? alert(response.data.message)
         : success(response.data.message);
-      navigate(`/`);
+      navigate(`/dashboard`);
     } catch (error) {
       console.error(error);
       throw error;

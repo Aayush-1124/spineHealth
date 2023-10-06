@@ -1,4 +1,4 @@
-import React from "react";
+
 import SectionHeader from "../sectionHeader/SectionHeader";
 import PrimaryInput from "../inputs/primaryInput/PrimaryInput";
 import shape1 from "../../../assets/images/shape1.svg";
@@ -116,7 +116,7 @@ const ContactUs = () => {
           )}
         />
 
-        <SecondaryButton label={"appointment"} type="submit" />
+        <SecondaryButton label={"Appointment"} type="submit" />
       </form>
     </section>
   );

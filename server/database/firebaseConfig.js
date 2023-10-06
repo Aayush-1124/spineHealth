@@ -14,10 +14,4 @@ const db = firebase.firestore();
 let user = db.collection("user");
 
 
-
-
-
-
-
-
 module.exports = { user, db };

@@ -5,6 +5,7 @@ import { success } from "../helper/notification";
 
 export const Patient = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const PatientDataProvider = ({ children }) => {
   const navigate = useNavigate();
   const [patientData, setPaientData] = useState([]);

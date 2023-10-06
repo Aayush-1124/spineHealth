@@ -1,15 +1,16 @@
-import React from "react";
+// import React from "react";
 //icons
 import { AiOutlineSearch } from "react-icons/ai";
 import { RxCross1 } from "react-icons/rx";
 
+// eslint-disable-next-line react/prop-types
 const SerachInput = ({ value, onChangeAction, clearInput }) => {
   return (
     <div className="flex items-center gap-2 p-2 border rounded-lg ">
       <AiOutlineSearch className="text-xl max-md:text-lg" />
       <input
         type="text"
-        placeholder="Search within pateint"
+        placeholder="Search within patient"
         className="outline-none md:text-lg"
         value={value || ""}
         onChange={onChangeAction}
