@@ -52,7 +52,7 @@ const NewPatient = () => {
         <form onSubmit={handleSubmit(handelSubmit)}>
           <TextInput
             type={"text"}
-            title={"name"}
+            title={"Name"}
             name={"name"}
             control={control}
             errors={errors}
@@ -71,7 +71,7 @@ const NewPatient = () => {
           />
           <TextInput
             type={"number"}
-            title={"age"}
+            title={"Age"}
             name={"age"}
             control={control}
             errors={errors}
@@ -84,7 +84,7 @@ const NewPatient = () => {
           />
           <TextInput
             type={"text"}
-            title={"nature Of Working"}
+            title={"Nature Of Working"}
             name={"natureOfWorking"}
             control={control}
             errors={errors}

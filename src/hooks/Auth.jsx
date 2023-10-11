@@ -50,6 +50,7 @@ export const AuthProvider = ({ children }) => {
   // }, []);
 
   return (
+  
     <Auth.Provider value={{ user, getUser, getLogin }}>
       {children}
     </Auth.Provider>

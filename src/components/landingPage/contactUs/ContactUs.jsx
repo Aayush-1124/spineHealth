@@ -77,7 +77,7 @@ const ContactUs = () => {
     { label: "phone number", name: "phoneNumber" },
   ];
   return (
-    <section className="container relative m-auto p-5" id="contactUs">
+    <section className="container relative p-5 m-auto" id="contactUs">
       <SectionHeader title={"book an appointment"} />
       <div className="shape-1">
         <img src={shape1} alt="" />
