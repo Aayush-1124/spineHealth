@@ -21,6 +21,7 @@ export const PatientDataProvider = ({ children }) => {
       response.data.error
         ? new Error(response.data.error)
         : success(response.data.message);
+      await getAllPatients();
       navigate("/dashboard");
     } catch (error) {
       console.error(error);
@@ -54,7 +55,10 @@ export const PatientDataProvider = ({ children }) => {
       response.data.error
         ? new Error(response.data.error)
         : success(response.data.message);
+      await getAllPatients();
+
       navigate("/dashboard");
+      // Fetch updated data immediately after the edit
     } catch (error) {
       console.error(error);
       throw error;
@@ -68,7 +72,9 @@ export const PatientDataProvider = ({ children }) => {
         { withCredentials: true }
       );
 
-      response.data.error ? new Error(response.data.error) : getAllPatients();
+      response.data.error
+        ? new Error(response.data.error)
+        : await getAllPatients();
       success(response.data.message);
     } catch (error) {
       console.error(error);
