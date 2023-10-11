@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TiTickOutline } from "react-icons/ti";
 
+// eslint-disable-next-line react/prop-types
 const Modal = ({ ButtonStyle, ButtonTitle, ViewComponent }) => {
   const [openModal, setOpenModal] = useState(false);
   const handleClose = () => setOpenModal(!openModal);

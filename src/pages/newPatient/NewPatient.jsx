@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState, useContext } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
@@ -21,6 +22,7 @@ const NewPatient = () => {
     register,
   } = useForm();
   //states
+  // eslint-disable-next-line no-unused-vars
   const [patientProfileData, setPatientProfileData] = useState(
     state ? state : []
   );

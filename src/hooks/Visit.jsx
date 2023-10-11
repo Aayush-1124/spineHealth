@@ -5,6 +5,7 @@ import { alert, success } from "../helper/notification";
 
 export const VisitData = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const VisitDataProvider = ({ children }) => {
   const navigate = useNavigate();
 
